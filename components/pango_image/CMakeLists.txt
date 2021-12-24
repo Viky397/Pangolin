@@ -1,5 +1,5 @@
 get_filename_component(COMPONENT ${CMAKE_CURRENT_LIST_DIR} NAME)
-
+set_property(TARGET ${COMPONENT} PROPERTY CXX_STANDARD 11)
 option(BUILD_PANGOLIN_LIBPNG "Build support for libpng image input" ON)
 if(BUILD_PANGOLIN_LIBPNG)
     find_package(PNG QUIET)
